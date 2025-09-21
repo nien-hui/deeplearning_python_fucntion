@@ -19,3 +19,5 @@ print(z)
 dzdy=torch.autograd.grad(z,y,retain_graph=True)[0].detach()
 dzdx=torch.autograd.grad(y,x,grad_outputs=dzdy)[0]
 print(dzdx)
+
+## first dzdx is same to second dzdx
